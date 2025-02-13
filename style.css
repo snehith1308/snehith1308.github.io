@@ -10,7 +10,7 @@
   }
 
   .header-row {
-    background-color: orange;
+    background-color: rgb(4, 1, 7);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,6 +20,8 @@
 
   .header-row .box {
     padding: 10px;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
   }
 
   .header-row li {
@@ -44,6 +46,7 @@
   .row .box {
     padding: 20px;
     margin: 10px;
+    
   }
 
   .footer {
