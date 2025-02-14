@@ -79,6 +79,6 @@ const showProducts = (data) => {
     </div>
     `;
   });
-  divProducts.innerHTML = str;
+  divProducts.innerHTML = str+"</div>";
 };
 
