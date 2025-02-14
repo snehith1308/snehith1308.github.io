@@ -1,8 +1,3 @@
-// const products = [
-//   { id: 1, name: "P1", price: 34 },
-//   { id: 2, name: "P2", price: 50 },
-//   { id: 3, name: "P3", price: 40 },
-// ];
 let products = []
 
 fetch("products.json")
@@ -67,18 +62,18 @@ const showCart = () => {
 };
 const showProducts = (data) => {
   products = data
-  let str = "";
+  let str = "<div class='row'>";
   products.map((value) => {
     str += `
-    <div>
+    <div class='box'>
     <img src='${value.url}'>
     <h3>${value.name}</h3>
     <p>${value.desc}</p>
-    <h4>${value.price}</h4>
+    <h4>$${value.price}</h4>
     <button onclick='addToCart(${value.id})'>Add to Cart</button>
     </div>
     `;
   });
-  divProducts.innerHTML = str+"</div>";
+  divProducts.innerHTML = str + "</div>";
 };
 
