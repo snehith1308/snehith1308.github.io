@@ -10,14 +10,16 @@
     <script>
         ball.style.position="absolute";
         let b=document.body;
+        let left=0;
         let down=0;
         // b.onkeydown=(e) =>
         // {
         //     root.innerHTML=e.key;
         // };
         b.onkeydown= (e) => {
-            console.log(e.key)
-            down=down+5;
+            if(e.key=="ArrowRight") left+=5;
+            if(e.key=="ArrowDown") down=down+5;
+            ball.style.left=left+"px";
             ball.style.top=down+"px";
         };
     </script>
