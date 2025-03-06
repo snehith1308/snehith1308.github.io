@@ -10,7 +10,7 @@
   }
 
   .header-row {
-    background-color: rgb(4, 1, 7);
+    background: linear-gradient(135deg, #3c433c, rgb(84, 193, 53));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,3 +64,31 @@
     border: none;
     border-radius: 10%;
   }
+  .box1:hover {
+    transform: translateY(-5px);
+}
+   
+.row1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+
+.box1 {
+  background: linear-gradient(135deg, #c57be2, rgb(216, 80, 22));
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: center;
+}
+.box11 {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: center;
+}
